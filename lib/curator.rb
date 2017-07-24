@@ -1,4 +1,5 @@
 require './lib/museum'
+require './lib/artist'
 
 class Curator
 
@@ -14,6 +15,10 @@ class Curator
 
   def add_museum(name_hash)
     museums << Museum.new(name_hash)
+  end
+
+  def add_artist(info)
+    artists << Artist.new(info)
   end
 
 end
